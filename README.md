@@ -1,6 +1,6 @@
 # dailyactivities
 
-A simpe Flutter project that generates random daily activities and allow user to save and display the generated activities in a list.
+A simple Flutter project that generates random daily activities and allow user to save and list the generated activities.
 
 # project members
 
@@ -18,4 +18,4 @@ flutter run.
 # authentication
 
 sign up is not working.
-enter email: test123@gmail.com, password: test123 to access the home page.
+enter email: test123@gmail.com, password: test123 in login page to access the home page.
