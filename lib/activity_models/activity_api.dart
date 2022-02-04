@@ -23,8 +23,8 @@ class Album {
   final String type;
 
   const Album({
-    this.activity,
-    this.type,
+    required this.activity,
+    required this.type,
   });
 
   factory Album.fromJson(Map<String, dynamic> json) {
