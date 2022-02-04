@@ -1,16 +1,21 @@
 # dailyactivities
 
-A new Flutter project.
+A simpe Flutter project that generates random daily activities and allow user to save and display the generated activities in a list.
 
-## Getting Started
+# project members
 
-This project is a starting point for a Flutter application.
+Team members involved for this project are:
+1. NUR FADHILAH AJWA BINTI ROSDEE 1815912
+2. MUHAMMAD ADHWA' AIZAT BIN HARUN 1911549
+3. MUHAMMAD IKRAM BIN IQBAL FITHRI 1912071
+4. NUR NADIAH BINTI ALI AZMI 1813966
 
-A few resources to get you started if this is your first Flutter project:
+# compile and run
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+need to install and configure firebase.
+flutter run.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# authentication
+
+sign up is not working.
+enter email: test123@gmail.com, password: test123 to access the home page.
