@@ -1,16 +1,21 @@
 # dailyactivities
 
-A new Flutter project.
+Course Name : Mobile Application Development
+Course Code : CSCI 4311   
+Description : Group Project
 
-## Getting Started
+## Group members
 
-This project is a starting point for a Flutter application.
+| Name     | Matric No      | 
+| ------------- | ------------- | 
+| Muhammad Ikram Bin Iqbal Fithri          | 1912071     |
+| Muhammad Adhwa' Aizat Bin Harun      | 1911549         |
+| Nur Nadiah Binti Ali Azmi         | 1813966     |
+| Nur Fadhilah Ajwa Binti Rosdee     | 1815912         |
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## About this project
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Mobile application made using flutter which is an open-source UI Software development. This application helps user to view list of random activities and beforehand,user has to sign in into the system.After that the user can login successfully and with this app it helps to present random activities for the user and allows the user to learn and do new activities.
+
+## Apps Feature
