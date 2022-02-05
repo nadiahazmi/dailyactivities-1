@@ -1,6 +1,6 @@
 # dailyactivities
 
-A simple Flutter project called 'Daily Activities Generator' that generates random daily activities and allow user to save and list the generated activities.
+A simple Flutter project called 'Daily Activities Generator' that generates random daily activities retrieved from an API and allow user to save and list the generated activities. The project also contains authentication page that allow for log in and sign up using firebase.
 
 # project members
 
