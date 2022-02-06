@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, unnecessary_string_interpolations
+
 import 'package:dailyactivities/activity_models/activity_api.dart';
 import 'package:flutter/material.dart';
 import 'package:dailyactivities/main.dart';
@@ -37,8 +39,8 @@ class _HomePageState extends State<HomePage> {
             'what should i do today?',
             style: TextStyle(
                 color: Colors.lightBlue.shade700,
-                fontFamily: 'Jua-Regular',
-                fontSize: 40),
+                fontFamily: 'Open-Sans',
+                fontSize: 30),
           ),
           SizedBox(
             height: 20,
@@ -60,9 +62,9 @@ class _HomePageState extends State<HomePage> {
                 activity_list = snapshot.data!.activity;
                 return Text(snapshot.data!.activity,
                     style: TextStyle(
-                        color: Colors.black,
+                        color: Colors.white,
                         fontFamily: 'Jua-Regular',
-                        fontSize: 20));
+                        fontSize: 15));
               } else if (snapshot.hasError) {
                 return Text('${snapshot.error}');
               }
@@ -93,9 +95,9 @@ class _HomePageState extends State<HomePage> {
                     child: Center(
                       child: Text('${activities[index]}',
                           style: TextStyle(
-                              color: Colors.black,
+                              color: Colors.white,
                               fontFamily: 'Jua-Regular',
-                              fontSize: 20)),
+                              fontSize: 15)),
                     ),
                   );
                 }),

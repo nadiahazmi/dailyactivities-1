@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Daily Activities',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Jua-Regular'),
+      theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Open-Sans'),
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
