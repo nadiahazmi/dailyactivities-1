@@ -1,7 +1,9 @@
-// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, prefer_const_literals_to_create_immutables, unnecessary_string_interpolations
+// ignore_for_file: prefer_const_constructors, unnecessary_string_interpolations
 
 import 'package:dailyactivities/activity_models/activity_api.dart';
 import 'package:flutter/material.dart';
+import 'package:dailyactivities/main.dart';
+import 'package:flutter/cupertino.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,7 +11,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  Future<Album> futureAlbum;
+  late Future<Album> futureAlbum;
   String activity_list = "";
   List<String> activities = <String>[];
 
@@ -30,13 +32,39 @@ class _HomePageState extends State<HomePage> {
     return Center(
       child: Column(
         children: [
-          TextButton(onPressed: changeData, child: Text('New Activities')),
+          SizedBox(
+            height: 30,
+          ),
+          Text(
+            'what should i do today?',
+            style: TextStyle(
+                color: Colors.lightBlue.shade700,
+                fontFamily: 'Open-Sans',
+                fontSize: 30),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          RaisedButton(
+              onPressed: changeData,
+              child: Text(
+                'New Activities',
+                style: TextStyle(fontSize: 15),
+              ),
+              color: Colors.yellow),
+          SizedBox(
+            height: 20,
+          ),
           FutureBuilder<Album>(
             future: futureAlbum,
             builder: (context, snapshot) {
               if (snapshot.hasData) {
-                activity_list = snapshot.data.activity;
-                return Text(snapshot.data.activity);
+                activity_list = snapshot.data!.activity;
+                return Text(snapshot.data!.activity,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Jua-Regular',
+                        fontSize: 15));
               } else if (snapshot.hasError) {
                 return Text('${snapshot.error}');
               }
@@ -45,11 +73,18 @@ class _HomePageState extends State<HomePage> {
               return const CircularProgressIndicator();
             },
           ),
-          TextButton(
+          SizedBox(
+            height: 30,
+          ),
+          RaisedButton(
               onPressed: () {
                 showAlertDialog(context);
               },
-              child: Text('Add to the list')),
+              child: Text(
+                'Add to the list',
+                style: TextStyle(fontSize: 15),
+              ),
+              color: Colors.yellow),
           Expanded(
             child: ListView.builder(
                 itemCount: activities.length,
@@ -58,7 +93,11 @@ class _HomePageState extends State<HomePage> {
                     height: 50,
                     margin: EdgeInsets.all(2),
                     child: Center(
-                      child: Text('${activities[index]}'),
+                      child: Text('${activities[index]}',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Jua-Regular',
+                              fontSize: 15)),
                     ),
                   );
                 }),
