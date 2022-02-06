@@ -40,4 +40,7 @@ Description : Group Project
 Mobile application made using flutter which is an open-source UI Software development. This application helps user to view list of random activities and beforehand,user has to sign in into the system.After that the user can login successfully and with this app it helps to present random activities for the user and allows the user to learn and do new activities.
 
 ## Apps Feature
->>>>>>> master
+
+This apps will retrive a random activities from the api by clicking the button. If the user interesented with the activity they can save it.
+  1. Generate a random activity 
+  2. Save the random activity
